@@ -1,23 +1,45 @@
+"use client";
 import React from "react";
-import clientPromise from "@/app/api/connectMongo";
+import connectMongo from "@/app/api/connectMongo";
+import { Chapter } from "@/app/api/models/models";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import Definition from "@/components/Definition";
 
-function page({ params }) {
-	getChapters();
-	return <div>page id</div>;
+function page({ params, props }) {
+	getChapter(params.id);
+	return (
+		<article>
+			{/* <header>
+				<h1 id="chapter">Chapter {props.id}</h1>
+			</header>
+			<ReactMarkdown>{props.text}</ReactMarkdown> */}
+		</article>
+	);
 }
 
-export async function getChapters(req, res) {
+export async function getChapter(id, req, res) {
 	try {
 		console.log("CONNECTING");
-		const client = await clientPromise;
-		const db = await client.db("bookchapters");
-		const collection = db.collection("chapters");
-		// example to get a doc in collection
-		const doc = await collection.findOne({ query: "" });
-		console.log(doc);
+		await connectMongo();
+		// console.log("CONNECTED");
+
+		const chapter = await Chapter.findOne({ id: id });
+		const parsed = JSON.parse(JSON.stringify(chapter));
+
+		// const req = await fetch("/api/chapters");
+		// const res = await req.json();
+
+		// const filter = res.filter((chapter) => chapter.id === id);
+
+		// console.log(res);
+		return {
+			props: {
+				id: parsed.id,
+				text: parsed.text
+			}
+		};
 	} catch (error) {
 		console.log(error);
 	}
 }
-
 export default page;
