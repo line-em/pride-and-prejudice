@@ -1,0 +1,38 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+nav div {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: var(--text-bright);
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li:not(:last-child) {
+	margin-right: 2.4rem;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: var(--links-nav);
+	letter-spacing: -0.01em;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+nav ul li a button {
+	cursor: pointer;
+	border-radius: 0.8rem;
+	font-size: inherit;
+}

@@ -1,0 +1,39 @@
+.story {
+	max-width: 75ch;
+	margin: auto;
+	text-align: justify;
+	margin-bottom: 2rem;
+	font-size: var(--font-size);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 8vw 1fr;
+	transition: grid-template-columns 300ms ease-in-out;
+	gap: 10px;
+}
+
+.grid:has(aside > details[open]) {
+	grid-template-columns: 13vw 1fr;
+}
+
+.flex {
+	display: flex;
+	gap: 10px;
+	flex: none;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex-direction: column;
+}
+
+h3 + .flex {
+	margin-block: 10px 25px;
+}
+
+aside {
+	display: flex;
+	gap: 20px;
+}

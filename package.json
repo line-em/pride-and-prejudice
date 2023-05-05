@@ -1,18 +1,20 @@
 {
-  "name": "novel-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.4.1",
-    "next": "13.4.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+	"name": "novel-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"eslint-config-next": "13.4.1",
+		"next": "13.4.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.8.0",
+		"react-markdown": "^8.0.7",
+		"react-tooltip": "^5.11.1"
+	}
 }

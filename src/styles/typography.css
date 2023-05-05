@@ -1,0 +1,52 @@
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-accent);
+	line-height: 1;
+	font-weight: 600;
+	position: relative;
+}
+
+h1 {
+	font-size: 3.2rem;
+	letter-spacing: -0.04em;
+	margin-bottom: 2rem;
+}
+
+h1::after,
+h2::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	z-index: -1;
+	left: 0;
+	width: 50%;
+	border-bottom: 5px solid var(--accent);
+}
+
+.sans {
+	font-family: var(--sans);
+}
+
+.sans2 {
+	font-family: var(--sans2);
+}
+
+.serif {
+	font-family: var(--serif);
+}
+
+.serif2 {
+	font-family: var(--serif2);
+}
+
+.mono {
+	font-family: var(--mono);
+}
