@@ -1,7 +1,7 @@
 import { Lora, Rubik, Literata, Noto_Sans_Mono, Montserrat } from "next/font/google";
-import "../styles/grid.css";
-import "./globals.css";
 import "../styles/typography.css";
+import "../styles/grid.css";
+import "../styles/globals.css";
 import Nav from "@/components/Nav";
 import Settings from "@/components/Settings";
 import Link from "next/link";
@@ -58,7 +58,8 @@ export default function RootLayout({ children }) {
 							</summary>
 							<ul role="listbox">
 								<li>
-									<Link href="./Ch01">Chapter 01</Link>
+									<Link href="/test-chapters/">Chapter 01</Link>
+									<Link href="/chapters">Chapter 01</Link>
 								</li>
 							</ul>
 						</details>

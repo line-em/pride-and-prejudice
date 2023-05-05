@@ -45,7 +45,12 @@ function Settings() {
 			<h3>Font</h3>
 			<article className="flex">
 				{fonts.map((font, i) => (
-					<button key={i} onClick={() => setFont(font)} className={font}>
+					<button
+						key={i}
+						onClick={() => setFont(font)}
+						className={font}
+						data-font
+					>
 						Aa
 					</button>
 				))}
