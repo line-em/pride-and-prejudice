@@ -30,23 +30,3 @@ h2::after {
 	width: 50%;
 	border-bottom: 5px solid var(--accent);
 }
-
-.sans {
-	font-family: var(--sans);
-}
-
-.sans2 {
-	font-family: var(--sans2);
-}
-
-.serif {
-	font-family: var(--serif);
-}
-
-.serif2 {
-	font-family: var(--serif2);
-}
-
-.mono {
-	font-family: var(--mono);
-}

@@ -1,6 +1,6 @@
 import { Lora, Rubik, Literata, Noto_Sans_Mono, Montserrat } from "next/font/google";
 import "../styles/grid.css";
-import "../styles/index.css";
+import "./globals.css";
 import "../styles/typography.css";
 import Nav from "@/components/Nav";
 import Settings from "@/components/Settings";
@@ -12,7 +12,7 @@ export const lora = Lora({
 	fallback: ["georgia", "times new roman", "serif"]
 });
 
-export const inconsolata = Noto_Sans_Mono({
+export const mono = Noto_Sans_Mono({
 	subsets: ["latin"],
 	variable: "--mono",
 	fallback: ["georgia", "times new roman", "serif"]
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			className={`${literata.variable} ${rubik.variable} ${montserrat.variable} ${inconsolata.variable} ${lora.variable}`}
+			className={`${literata.variable} ${rubik.variable} ${montserrat.variable} ${mono.variable} ${lora.variable}`}
 		>
 			<body className={literata.className}>
 				<Nav />
