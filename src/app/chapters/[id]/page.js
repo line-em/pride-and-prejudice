@@ -5,14 +5,15 @@ import { Chapter } from "@/app/api/models/models";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Definition from "@/components/Definition";
 
-function page({ params, props }) {
-	getChapter(params.id);
+async function page({ params }) {
+	const chapter = await getChapter(params.id);
+	console.log(chapter);
 	return (
 		<article>
-			{/* <header>
-				<h1 id="chapter">Chapter {props.id}</h1>
+			<header>
+				<h1 id="chapter">Chapter {chapter?.id}</h1>
 			</header>
-			<ReactMarkdown>{props.text}</ReactMarkdown> */}
+			<ReactMarkdown>{chapter?.text}</ReactMarkdown>
 		</article>
 	);
 }
@@ -31,12 +32,9 @@ export async function getChapter(id, req, res) {
 
 		// const filter = res.filter((chapter) => chapter.id === id);
 
-		// console.log(res);
 		return {
-			props: {
-				id: parsed.id,
-				text: parsed.text
-			}
+			id: parsed.id,
+			text: parsed.text
 		};
 	} catch (error) {
 		console.log(error);
