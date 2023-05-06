@@ -5,7 +5,7 @@ function Definition({ children, text }) {
 		<>
 			<a data-tooltip-id={children} data-tooltip-content={text}>
 				{children}
-			</a>
+			</a>{" "}
 			<Tooltip
 				id={children}
 				offset={3}

@@ -2,6 +2,7 @@ import { Lora, Rubik, Literata, Noto_Sans_Mono, Montserrat } from "next/font/goo
 import "../styles/typography.css";
 import "../styles/grid.css";
 import "../styles/globals.css";
+import "react-tooltip/dist/react-tooltip.css";
 import Nav from "@/components/Nav";
 import Settings from "@/components/Settings";
 import Link from "next/link";
