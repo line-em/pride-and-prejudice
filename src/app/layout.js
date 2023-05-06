@@ -58,8 +58,8 @@ export default function RootLayout({ children }) {
 							</summary>
 							<ul role="listbox">
 								<li>
-									<Link href="/test-chapters/">Chapter 01</Link>
-									<Link href="/chapters">Chapter 01</Link>
+									<Link href="/chapters/1">Chapter 01</Link>
+									<Link href="/chapters/2">Chapter 02</Link>
 								</li>
 							</ul>
 						</details>

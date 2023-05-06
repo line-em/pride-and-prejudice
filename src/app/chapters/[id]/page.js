@@ -6,8 +6,8 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Definition from "@/components/Definition";
 
 async function page({ params }) {
-	const chapter = await getChapter(params.id);
-	console.log(chapter);
+	// const chapter = await getChapter(params.id);
+	// console.log(chapter);
 	return (
 		<article>
 			<header>
@@ -18,26 +18,26 @@ async function page({ params }) {
 	);
 }
 
-export async function getChapter(id, req, res) {
-	try {
-		console.log("CONNECTING");
-		await connectMongo();
-		// console.log("CONNECTED");
+// export async function getChapter(id, req, res) {
+// 	try {
+// 		console.log("CONNECTING");
+// 		await connectMongo();
+// console.log("CONNECTED");
 
-		const chapter = await Chapter.findOne({ id: id });
-		const parsed = JSON.parse(JSON.stringify(chapter));
+// const chapter = await Chapter.findOne({ id: id });
+// const parsed = JSON.parse(JSON.stringify(chapter));
 
-		// const req = await fetch("/api/chapters");
-		// const res = await req.json();
+// const req = await fetch("/api/chapters");
+// const res = await req.json();
 
-		// const filter = res.filter((chapter) => chapter.id === id);
+// const filter = res.filter((chapter) => chapter.id === id);
 
-		return {
-			id: parsed.id,
-			text: parsed.text
-		};
-	} catch (error) {
-		console.log(error);
-	}
-}
-export default page;
+// 		return {
+// 			id: parsed.id,
+// 			text: parsed.text
+// 		};
+// 	} catch (error) {
+// 		console.log(error);
+// 	}
+// }
+// export default page;
