@@ -167,5 +167,12 @@ export default [
 		word: "endeavour",
 		definition: "try hard to do or achieve something.",
 		__v: 0
+	},
+	{
+		_id: "",
+		word: "like Vingt-un better than Commerce",
+		definition:
+			"This quote contains allusions to two card games that were popular during the novel’s setting.",
+		__v: 0
 	}
 ];

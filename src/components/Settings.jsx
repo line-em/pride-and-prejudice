@@ -1,41 +1,14 @@
-"use client";
-import { useState } from "react";
+import useLayoutStore from "@/store/useLayoutStore";
 import "../styles/range.css";
-import { rubik, literata, montserrat, mono, lora } from "@/app/layout";
 
 function Settings() {
-	const [fontSize, setFontSize] = useState("1rem");
-
-	const fonts = [
-		rubik.className,
-		lora.className,
-		montserrat.className,
-		literata.className,
-		mono.className
-	];
-
-	function setFont(fontIndex) {
-		document.body.classList.remove(...fonts.map((f) => f));
-		document.body.classList.add(fontIndex);
-	}
-
-	function setSize(value) {
-		setFontSize(value);
-		const storyElement = document.querySelector(".story");
-		if (storyElement) {
-			storyElement.style.setProperty("--font-size", value);
-		}
-	}
-
-	function setTheme(textColor, textAccentColor, backgroundColorAlt, backgroundColor) {
-		document.documentElement.style.setProperty("--text", textColor);
-		document.documentElement.style.setProperty("--text-accent", textAccentColor);
-		document.documentElement.style.setProperty(
-			"--background-alt",
-			backgroundColorAlt
-		);
-		document.documentElement.style.setProperty("--background", backgroundColor);
-	}
+	const { fontSize, fonts, setFont, setSize, setTheme } = useLayoutStore((state) => ({
+		fontSize: state.fontSize,
+		fonts: state.fonts,
+		setFont: state.setFont,
+		setSize: state.setSize,
+		setTheme: state.setTheme
+	}));
 
 	return (
 		<details className="config flex column">

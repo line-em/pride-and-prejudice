@@ -6,7 +6,7 @@ import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 function Definition({ children, text }) {
 	return (
 		<>
-			<Tooltip target=".tooltip" position="top" />
+			<Tooltip target=".tooltip" position="top" style={{ maxWidth: 250 }} />
 			<span data-pr-tooltip={text} className="tooltip">
 				{children}
 			</span>{" "}

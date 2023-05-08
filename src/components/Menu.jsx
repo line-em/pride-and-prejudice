@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { RiPaintLine, RiMenuLine } from "react-icons/ri";
 import Settings from "@/components/Settings";
 import { Sidebar } from "primereact/sidebar";
 import "primereact/resources/primereact.min.css";
@@ -11,7 +11,12 @@ function Menu() {
 	const [visible, setVisible] = useState(false);
 	return (
 		<nav>
-			<button onClick={() => setVisible(!visible)}>{HiOutlineMenuAlt2}</button>
+			<button onClick={() => setVisible(!visible)}>
+				<RiPaintLine /> Styling
+			</button>
+			<button onClick={() => setVisible(!visible)}>
+				<RiMenuLine /> Chapters
+			</button>
 			<Sidebar visible={visible} onHide={() => setVisible(false)}>
 				<Settings />
 				<details role="list" dir="ltf">
