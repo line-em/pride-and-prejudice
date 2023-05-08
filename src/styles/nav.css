@@ -1,7 +1,10 @@
 nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
 	margin-bottom: 2rem;
+	gap: 10px;
 }
 
 nav div {

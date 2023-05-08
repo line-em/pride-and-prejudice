@@ -13,10 +13,10 @@ function Menu() {
 	return (
 		<nav>
 			<button onClick={() => setVisible(!visible)}>
-				<RiPaintLine /> Styling
+				<RiPaintLine size={18} /> Styling
 			</button>
 			<button onClick={() => setVisible(!visible)}>
-				<RiMenuLine /> Chapters
+				<RiMenuLine size={18} /> Chapters
 			</button>
 			<Sidebar visible={visible} onHide={() => setVisible(false)}>
 				<Settings />

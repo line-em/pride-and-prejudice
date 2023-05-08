@@ -20,6 +20,10 @@ h1 {
 	margin-bottom: 2rem;
 }
 
+h4 {
+	margin-block: 1rem;
+}
+
 h1::after,
 h2::after {
 	content: "";
@@ -29,4 +33,8 @@ h2::after {
 	left: 0;
 	width: 50%;
 	border-bottom: 5px solid var(--accent);
+}
+
+p + p {
+	margin-top: 1rem;
 }

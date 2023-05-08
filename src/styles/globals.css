@@ -37,10 +37,6 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-p + p {
-	margin-top: 0.8rem;
-}
-
 body {
 	overflow: auto;
 	padding: 0;
@@ -48,7 +44,23 @@ body {
 	word-wrap: break-word;
 	padding: 1.8rem 2rem;
 	color: var(--text);
-	background: var(--background);
+	background-color: var(--background);
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+w-full {
+	width: 100%;
+}
+
+.h-auto {
+	height: auto;
 }
 
 img,
@@ -80,49 +92,28 @@ span[data-pr-tooltip] {
 }
 
 /*misc*/
-details {
-	padding: 0.6rem 1rem;
-	background: var(--background-alt);
-	border-radius: 4px 4px 0 0;
-	border-bottom: 2px solid var(--accent);
-	width: fit-content;
-}
-
-summary {
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 1.2rem;
-}
-
-details[open] {
-	padding-bottom: 0.75rem;
-	display: flex;
-}
-
-details[open] summary {
-	margin-bottom: 6px;
-}
-
-details[open] > *:last-child {
-	margin-bottom: 0;
-}
 
 hr {
-	color: var(--text);
+	border-style: dashed;
+	color: var(--accent);
+	margin-block: 1.5rem;
 }
 
-button {
+button,
+nav a {
 	border-radius: 4px;
-	font-family: var(--font-family);
+	font-family: inherit;
 	border: var(--accent) solid 2px;
 	padding: 0.1rem 0.6rem;
 	background: var(--background-alt);
 	color: var(--text-accent);
 	display: inline-flex;
 	align-items: center;
+	gap: 7px;
 }
 
-button:not(:disabled):hover {
+button:not(:disabled):hover,
+nav a:hover {
 	cursor: pointer;
 	background-color: var(--accent-alt);
 	transition: ease-in 200ms;

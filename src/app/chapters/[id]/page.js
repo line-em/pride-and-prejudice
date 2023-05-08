@@ -1,5 +1,6 @@
 import { fetchEntries } from "@/utils/contentful";
 import words from "@/data/words";
+import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri";
 import Definition from "@/components/Definition";
 import Link from "next/link";
 
@@ -57,12 +58,13 @@ async function page({ params }) {
 			<nav>
 				{params.id - 1 === 0 ? null : (
 					<Link href={`chapters/${Number(params.id) - Number(1)}`}>
+						<RiArrowLeftLine size={18} />
 						Previous Chapter
 					</Link>
 				)}
 				{params.id + 1 === 62 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
-						Next Chapter
+						Next Chapter <RiArrowRightLine size={18} />
 					</Link>
 				)}
 			</nav>
