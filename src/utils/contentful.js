@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
-const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-const token = process.env.NEXT_PUBLIC_CONTENTFUL_DELIVERY_TOKEN;
+const space = process.env.CONTENTFUL_SPACE_ID;
+const token = process.env.CONTENTFUL_DELIVERY_TOKEN;
 
 const client = createClient({
 	space: space,

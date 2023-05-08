@@ -1,10 +1,12 @@
 import React from "react";
 import { ProgressSpinner } from "primereact/progressspinner";
+import "primereact/resources/primereact.min.css";
+import "primereact/resources/themes/lara-dark-purple/theme.css";
 
 function loading() {
 	return (
 		<div>
-			<ProgressSpinner strokeWidth="8" fill="var(--accent)" />
+			<ProgressSpinner strokeWidth="5" />
 		</div>
 	);
 }

@@ -1,11 +1,5 @@
-"use client";
-
-import React from "react";
 import { fetchEntries } from "@/utils/contentful";
 import words from "@/data/words";
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-// desinstalar um desses
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Definition from "@/components/Definition";
 
 async function page({ params }) {
@@ -48,7 +42,7 @@ async function page({ params }) {
 										wordObj.word === word.replace(/[^\w\s]/gi, "")
 								);
 								return (
-									<Definition text="oi">
+									<Definition text="oi mkfmsdnfd fdsjfkjsdnfjhdsf nsdnfkjsdnf">
 										{matchingWordObj.word}
 									</Definition>
 								);
