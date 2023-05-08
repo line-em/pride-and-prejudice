@@ -28,11 +28,11 @@ async function page({ params }) {
 	return (
 		<section className="story">
 			<h1>Chapter {chapter.chapter}</h1>
-			{currText.map((p) => {
+			{currText.map((p, index) => {
 				const wordsInParagraph = p.split(" ");
 				return (
-					<p>
-						{wordsInParagraph.map((word) => {
+					<p key={p.slice(0) + index}>
+						{wordsInParagraph.map((word, index) => {
 							if (
 								dictionary.includes(word) ||
 								(punctuation.includes(word.slice(-1)) &&
@@ -43,9 +43,11 @@ async function page({ params }) {
 										wordObj.word === word.replace(/[^\w\s]/gi, "")
 								);
 								return (
-									<Definition text={matchingWordObj.definition}>
-										{matchingWordObj.word}
-									</Definition>
+									<span key={index + word}>
+										<Definition text={matchingWordObj.definition}>
+											{matchingWordObj.word}
+										</Definition>
+									</span>
 								);
 							} else {
 								return word + " ";
@@ -62,6 +64,15 @@ async function page({ params }) {
 						Previous Chapter
 					</Link>
 				)}
+
+				<Link
+					href={`https://www.litcharts.com/lit/pride-and-prejudice/chapter-${Number(
+						params.id
+					)}`}
+				>
+					LitCharts Analysis
+				</Link>
+
 				{params.id + 1 === 62 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						Next Chapter <RiArrowRightLine size={18} />

@@ -100,7 +100,7 @@ hr {
 }
 
 button,
-nav a {
+nav a:not(.no-button) {
 	border-radius: 4px;
 	font-family: inherit;
 	border: var(--accent) solid 2px;
