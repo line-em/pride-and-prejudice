@@ -17,3 +17,5 @@ export async function fetchEntries() {
 }
 
 export default { fetchEntries };
+
+// PEGAR OUTRO TOOLTIP
