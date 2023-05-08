@@ -49,8 +49,10 @@ export default function RootLayout({ children }) {
 			<body className={literata.className}>
 				<Header />
 				<main>
-					<Menu />
-					<section className="story">{children}</section>
+					<section className="story">
+						<Menu />
+						{children}
+					</section>
 				</main>
 				<footer>Book by Jane Austen etc. Coding by Line</footer>
 			</body>

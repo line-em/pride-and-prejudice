@@ -9,6 +9,7 @@ import { useState } from "react";
 
 function Menu() {
 	const [visible, setVisible] = useState(false);
+	const numOfChapters = Array.from({ length: 61 }, (_, index) => index + 1);
 	return (
 		<nav>
 			<button onClick={() => setVisible(!visible)}>
@@ -24,10 +25,13 @@ function Menu() {
 						Chapters
 					</summary>
 					<ul role="listbox">
-						<li>
-							<Link href="/chapters/1">Chapter 01</Link>
-							<Link href="/chapters/2">Chapter 02</Link>
-						</li>
+						{numOfChapters.map((chapter) => (
+							<li>
+								<button>
+									<Link href={`chapters/${chapter}`}>{chapter}</Link>
+								</button>
+							</li>
+						))}
 					</ul>
 				</details>
 			</Sidebar>

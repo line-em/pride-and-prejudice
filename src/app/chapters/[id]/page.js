@@ -1,6 +1,7 @@
 import { fetchEntries } from "@/utils/contentful";
 import words from "@/data/words";
 import Definition from "@/components/Definition";
+import Link from "next/link";
 
 async function page({ params }) {
 	const chapter = await getChapter(params.id);
@@ -52,6 +53,19 @@ async function page({ params }) {
 					</p>
 				);
 			})}
+			<hr />
+			<nav>
+				{params.id - 1 === 0 ? null : (
+					<Link href={`chapters/${Number(params.id) - Number(1)}`}>
+						Previous Chapter
+					</Link>
+				)}
+				{params.id + 1 === 62 ? null : (
+					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
+						Next Chapter
+					</Link>
+				)}
+			</nav>
 		</section>
 	);
 }
@@ -64,7 +78,6 @@ export async function getChapter(id) {
 	const currChapter = Object.assign(
 		...chapters.filter((chapter) => chapter.capitulo === Number(id))
 	);
-	// console.log(currChapter.texto.content[0].content);
 	return {
 		chapter: currChapter.capitulo,
 		text: currChapter.texto.content
