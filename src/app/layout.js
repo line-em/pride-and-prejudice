@@ -2,10 +2,8 @@ import { Lora, Rubik, Literata, Noto_Sans_Mono, Montserrat } from "next/font/goo
 import "../styles/typography.css";
 import "../styles/grid.css";
 import "../styles/globals.css";
-import "react-tooltip/dist/react-tooltip.css";
-import Nav from "@/components/Nav";
-import Settings from "@/components/Settings";
-import Link from "next/link";
+import Header from "@/components/Header";
+import Menu from "@/components/Menu";
 
 export const lora = Lora({
 	subsets: ["latin"],
@@ -49,22 +47,9 @@ export default function RootLayout({ children }) {
 			className={`${literata.variable} ${rubik.variable} ${montserrat.variable} ${mono.variable} ${lora.variable}`}
 		>
 			<body className={literata.className}>
-				<Nav />
-				<main className="grid">
-					<aside className="column">
-						<Settings />
-						<details role="list" dir="ltf">
-							<summary aria-haspopup="listbox" role="link">
-								Chapters
-							</summary>
-							<ul role="listbox">
-								<li>
-									<Link href="/chapters/1">Chapter 01</Link>
-									<Link href="/chapters/2">Chapter 02</Link>
-								</li>
-							</ul>
-						</details>
-					</aside>
+				<Header />
+				<main>
+					<Menu />
 					<section className="story">{children}</section>
 				</main>
 				<footer>Book by Jane Austen etc. Coding by Line</footer>

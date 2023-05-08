@@ -1,7 +1,7 @@
 "use client";
 import { Tooltip } from "primereact/tooltip";
 import "primereact/resources/primereact.min.css";
-import "primereact/resources/themes/mdc-light-indigo/theme.css";
+import "primereact/resources/themes/bootstrap4-light-purple/theme.css";
 
 function Definition({ children, text }) {
 	return (
