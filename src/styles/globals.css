@@ -67,7 +67,7 @@ select {
 	font: inherit;
 }
 
-a[data-pr-tooltip] {
+span[data-pr-tooltip] {
 	text-decoration: underline solid var(--accent) 3px;
 	text-underline-offset: 30%;
 	color: var(--text-accent);

@@ -26,7 +26,6 @@ async function page({ params }) {
 	return (
 		<section className="story">
 			<h1>Chapter {chapter.chapter}</h1>
-			<h2>TRANSFORMAR EM SSR NOVAMENTE</h2>
 			{currText.map((p) => {
 				const wordsInParagraph = p.split(" ");
 				return (
@@ -42,7 +41,7 @@ async function page({ params }) {
 										wordObj.word === word.replace(/[^\w\s]/gi, "")
 								);
 								return (
-									<Definition text="oi mkfmsdnfd fdsjfkjsdnfjhdsf nsdnfkjsdnf">
+									<Definition text={matchingWordObj.definition}>
 										{matchingWordObj.word}
 									</Definition>
 								);
