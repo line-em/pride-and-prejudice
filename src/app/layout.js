@@ -3,7 +3,6 @@ import "../styles/typography.css";
 import "../styles/grid.css";
 import "../styles/globals.css";
 import Header from "@/components/Header";
-import Menu from "@/components/Menu";
 
 export const lora = Lora({
 	subsets: ["latin"],
@@ -49,7 +48,6 @@ export default function RootLayout({ children }) {
 			<body className={literata.className}>
 				<Header />
 				<main>
-					<section aria-hidden className="halfbg"></section>
 					<section className="story">{children}</section>
 				</main>
 				<footer>Book by Jane Austen etc. Coding by Line</footer>

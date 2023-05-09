@@ -8,32 +8,40 @@ import "primereact/resources/themes/md-light-indigo/theme.css";
 import { useState } from "react";
 
 function Menu() {
-	const [visible, setVisible] = useState(false);
+	const [visibleL, setVisibleLeft] = useState(false);
+	const [visibleR, setVisibleRight] = useState(false);
 	const numOfChapters = Array.from({ length: 61 }, (_, index) => index + 1);
 	return (
 		<nav>
-			<button onClick={() => setVisible(!visible)}>
+			<button onClick={() => setVisibleLeft(!visibleL)}>
 				<RiPaintLine size={18} /> Styling
 			</button>
-			<button onClick={() => setVisible(!visible)}>
+			<button onClick={() => setVisibleRight(!visibleR)}>
 				<RiMenuLine size={18} /> Chapters
 			</button>
-			<Sidebar visible={visible} onHide={() => setVisible(false)}>
+			<Sidebar
+				visible={visibleL}
+				onHide={() => setVisibleLeft(false)}
+				position="left"
+			>
 				<Settings />
-				<details role="list" dir="ltf">
-					<summary aria-haspopup="listbox" role="link">
-						Chapters
-					</summary>
-					<ul role="listbox">
-						{numOfChapters.map((chapter, index) => (
-							<li key={index}>
-								<button>
-									<Link href={`chapters/${chapter}`}>{chapter}</Link>
-								</button>
-							</li>
-						))}
-					</ul>
-				</details>
+			</Sidebar>
+			<Sidebar
+				visible={visibleR}
+				onHide={() => setVisibleRight(false)}
+				position="right"
+			>
+				<h3>Chapters</h3>
+				<hr />
+				<ul role="listbox">
+					{numOfChapters.map((chapter, index) => (
+						<li key={index}>
+							<button>
+								<Link href={`chapters/${chapter}`}>{chapter}</Link>
+							</button>
+						</li>
+					))}
+				</ul>
 			</Sidebar>
 		</nav>
 	);

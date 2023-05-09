@@ -2,6 +2,7 @@ import { fetchEntries } from "@/utils/contentful";
 import words from "@/data/words";
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri";
 import Definition from "@/components/Definition";
+import Menu from "@/components/Menu";
 import Link from "next/link";
 
 async function page({ params }) {
@@ -27,7 +28,12 @@ async function page({ params }) {
 
 	return (
 		<section className="story">
-			<h1>Chapter {chapter.chapter}</h1>
+			<div className="container">
+				<header className="flex space">
+					<h1>Chapter {chapter.chapter}</h1>
+					<Menu />
+				</header>
+			</div>
 			{currText.map((p, index) => {
 				const wordsInParagraph = p.split(" ");
 				return (

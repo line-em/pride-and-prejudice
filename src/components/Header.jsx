@@ -1,7 +1,6 @@
 import React from "react";
 import { BiBookHeart } from "react-icons/bi";
 import "../styles/nav.css";
-import Menu from "./Menu";
 import Link from "next/link";
 
 function Header() {
@@ -16,9 +15,7 @@ function Header() {
 				</Link>
 				<h4>Online reading + Vocabulary builder</h4>
 			</section>
-			<section>
-				<Menu />
-			</section>
+			<section>Github</section>
 		</nav>
 	);
 }
