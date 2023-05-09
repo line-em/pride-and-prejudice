@@ -1,7 +1,6 @@
 .story {
 	max-width: 75ch;
 	margin: auto;
-	text-align: left;
 	margin-bottom: 2rem;
 	font-size: var(--font-size);
 }
@@ -14,6 +13,10 @@
 	flex-wrap: wrap;
 }
 
+.no-wrap {
+	flex-wrap: nowrap;
+}
+
 .container {
 	container-type: inline-size;
 	width: 100%;
@@ -24,8 +27,13 @@
 }
 
 @container (max-width: 463px) {
-	.space {
+	.space,
+	.space nav {
 		justify-content: center;
+	}
+
+	h1 {
+		text-align: center;
 	}
 }
 

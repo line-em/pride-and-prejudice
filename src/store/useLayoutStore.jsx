@@ -14,6 +14,7 @@ const useLayoutStore = create((set) => ({
 	textAccentColor: "#4caf50",
 	backgroundColorAlt: "#f4f4f4",
 	backgroundColor: "#fff",
+	textAlign: "left",
 
 	setFont: (fontIndex) =>
 		set((state) => {
@@ -48,8 +49,15 @@ const useLayoutStore = create((set) => ({
 				backgroundColorAlt: backgroundColorAlt,
 				backgroundColor: backgroundColor,
 				fonts: state.fonts,
-				fontSize: state.fontSize
+				fontSize: state.fontSize,
+				textAlign: state.align
 			};
+		}),
+	setAlign: (align) =>
+		set(() => {
+			document.body.classList.remove("ta-left", "ta-justify", "ta-right");
+			document.body.classList.add(`ta-${align}`);
+			return { textAlign: align };
 		})
 }));
 

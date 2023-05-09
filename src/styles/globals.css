@@ -35,6 +35,7 @@ body {
 	font-size: var(--font-size);
 	line-height: 1.8;
 	text-rendering: optimizeLegibility;
+	text-align: justify;
 }
 
 body {
@@ -92,6 +93,10 @@ select {
 	font: inherit;
 }
 
+a {
+	color: var(--color-accent);
+}
+
 span[data-pr-tooltip] {
 	text-decoration: underline solid var(--accent) 3px;
 	text-underline-offset: 30%;
@@ -142,4 +147,10 @@ button:is([data-font]) {
 button:disabled {
 	border: var(--text);
 	color: var(--text);
+}
+
+@media screen and (max-width: 460px) {
+	.mobile-hide {
+		display: none;
+	}
 }

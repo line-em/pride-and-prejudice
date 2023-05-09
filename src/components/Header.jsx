@@ -1,5 +1,6 @@
 import React from "react";
 import { BiBookHeart } from "react-icons/bi";
+import { FaGithubAlt } from "react-icons/fa";
 import "../styles/nav.css";
 import Link from "next/link";
 
@@ -8,14 +9,16 @@ function Header() {
 		<nav className="padding-block">
 			<section>
 				<Link href="/" className="no-button">
-					<h2 className="flex">
+					<h2 className="flex no-wrap">
 						<BiBookHeart color="var(--accent)" />
 						Pride and Prejudice
 					</h2>
 				</Link>
-				<h4>Online reading + Vocabulary builder</h4>
+				<h4 className="mobile-hide">Online reading + Vocabulary builder</h4>
 			</section>
-			<section>Github</section>
+			<Link href="/" className="no-button flex" target="_blank">
+				<FaGithubAlt size={24} title={"Code Repository on Github"} /> Line-em
+			</Link>
 		</nav>
 	);
 }

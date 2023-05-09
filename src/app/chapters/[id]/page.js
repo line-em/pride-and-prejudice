@@ -75,6 +75,7 @@ async function page({ params }) {
 					href={`https://www.litcharts.com/lit/pride-and-prejudice/chapter-${Number(
 						params.id
 					)}`}
+					target="_blank"
 				>
 					LitCharts Analysis
 				</Link>

@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-	font-size: 3.2rem;
+	font-size: 3rem;
 	letter-spacing: -0.04em;
 	margin-bottom: 2rem;
 }
@@ -41,4 +41,14 @@ h2::after {
 
 p + p {
 	margin-top: 1rem;
+}
+
+.ta-left {
+	text-align: left;
+}
+.ta-justify {
+	text-align: justify;
+}
+.ta-right {
+	text-align: right;
 }
