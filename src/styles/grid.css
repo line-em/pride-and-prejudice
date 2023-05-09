@@ -3,6 +3,24 @@
 	margin: auto;
 	margin-bottom: 2rem;
 	font-size: var(--font-size);
+	position: relative;
+}
+
+.float-nav {
+	position: sticky;
+	top: 50vh;
+}
+
+.float-nav svg {
+	position: absolute;
+}
+
+.float-nav.right svg {
+	right: -2.9rem;
+}
+
+.float-nav.left svg {
+	left: -2.9rem;
 }
 
 .flex {

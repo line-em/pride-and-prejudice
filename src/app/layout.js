@@ -50,7 +50,10 @@ export default function RootLayout({ children }) {
 				<main>
 					<section className="story">{children}</section>
 				</main>
-				<footer>Book by Jane Austen etc. Coding by Line</footer>
+				<footer className="center">
+					<hr />
+					Book by Jane Austen. Coding by Line.
+				</footer>
 			</body>
 		</html>
 	);

@@ -1,6 +1,11 @@
 import { fetchEntries } from "@/utils/contentful";
 import words from "@/data/words";
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri";
+import {
+	RiArrowRightLine,
+	RiArrowLeftLine,
+	RiArrowRightSLine,
+	RiArrowLeftSLine
+} from "react-icons/ri";
 import Definition from "@/components/Definition";
 import Menu from "@/components/Menu";
 import Link from "next/link";
@@ -28,6 +33,20 @@ async function page({ params }) {
 
 	return (
 		<section className="story">
+			<div aria-hidden className="float-nav left mobile-hide">
+				{params.id - 1 === 0 ? null : (
+					<Link href={`chapters/${Number(params.id) - Number(1)}`}>
+						<RiArrowLeftSLine size={45} />
+					</Link>
+				)}
+			</div>
+			<div aria-hidden className="float-nav right mobile-hide">
+				{params.id + 1 === 62 ? null : (
+					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
+						<RiArrowRightSLine size={45} />
+					</Link>
+				)}
+			</div>
 			<header className="container">
 				<div className="flex space">
 					<h1>Chapter {chapter.chapter}</h1>

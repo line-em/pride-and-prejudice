@@ -6,9 +6,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 export default function Home() {
 	return (
 		<main className="center">
-			<nav>
-				<Menu />
-			</nav>
+			<Menu />
 			<Image
 				src="/image.jpg"
 				width={500}
@@ -51,10 +49,17 @@ export default function Home() {
 			</p>
 			<hr />
 			<h2>Dynamic experience</h2>
-			<p>
-				Difficult vocabulary is highlighted, pages can be customizable (click on
-				the button STYLING), etc
-			</p>
+			<ul>
+				<li>Difficult vocabulary is highlighted.</li>
+				<li>
+					Pages can be customizable (click on the button STYLING): Font, size,
+					alignment, colors.
+				</li>
+				<li>Easy to read, responsive interface.</li>
+				<li>
+					Easily check the LitCharts for a given chapter, for further insight.
+				</li>
+			</ul>
 			<hr />
 			<nav>
 				<Link href="/credits">Credits and Further Reading</Link>

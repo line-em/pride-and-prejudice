@@ -95,6 +95,11 @@ select {
 
 a {
 	color: var(--color-accent);
+	fill: var(--color-accent);
+}
+
+a:hover {
+	color: var(--accent);
 }
 
 span[data-pr-tooltip] {
