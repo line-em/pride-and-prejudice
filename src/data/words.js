@@ -174,5 +174,36 @@ export default [
 		definition:
 			"This quote contains allusions to two card games that were popular during the novel’s setting.",
 		__v: 0
+	},
+	{
+		_id: "",
+		word: "witticism",
+		definition: "a cleverly witty and often biting or ironic remark.",
+		__v: 0
+	},
+	{
+		_id: "",
+		word: "jest",
+		definition: "a joking or mocking remark.",
+		__v: 0
+	},
+	{
+		_id: "",
+		word: "sycophant",
+		definition:
+			"a person who praises important or powerful people too much and in a way that is not sincere, especially in order to get something from them.",
+		__v: 0
+	},
+	{
+		_id: "",
+		word: "coquetry",
+		definition: "a flirtatious act or attitude.",
+		__v: 0
+	},
+	{
+		_id: "",
+		word: "ascetic",
+		definition: "austere in appearance, manner, or attitude.",
+		__v: 0
 	}
 ];

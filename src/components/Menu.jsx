@@ -36,9 +36,7 @@ function Menu() {
 				<ul role="listbox">
 					{numOfChapters.map((chapter, index) => (
 						<li key={index}>
-							<button>
-								<Link href={`chapters/${chapter}`}>{chapter}</Link>
-							</button>
+							<Link href={`chapters/${chapter}`}>{chapter}</Link>
 						</li>
 					))}
 				</ul>

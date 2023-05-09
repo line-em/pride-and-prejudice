@@ -28,12 +28,12 @@ async function page({ params }) {
 
 	return (
 		<section className="story">
-			<div className="container">
-				<header className="flex space">
+			<header className="container">
+				<div className="flex space">
 					<h1>Chapter {chapter.chapter}</h1>
 					<Menu />
-				</header>
-			</div>
+				</div>
+			</header>
 			{currText.map((p, index) => {
 				const wordsInParagraph = p.split(" ");
 				return (

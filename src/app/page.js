@@ -1,3 +1,4 @@
+import Menu from "@/components/Menu";
 import Image from "next/image";
 import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
@@ -53,9 +54,13 @@ export default function Home() {
 			</p>
 			<hr />
 			<nav>
+				<Link href="/credits">Credits and Further Reading</Link>
 				<Link href={`chapters/1`}>
 					Begin Reading <RiArrowRightLine size={18} />
 				</Link>
+			</nav>
+			<nav>
+				<Menu />
 			</nav>
 		</main>
 	);
