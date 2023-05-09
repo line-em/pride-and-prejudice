@@ -36,8 +36,8 @@ export default function Home() {
 				poor upon his death. Thus, it is imperative that at least one of the
 				daughters marries well to support the others, which is a motivation that
 				drives the plot. Pride and Prejudice has consistently appeared near the
-				top of lists of "most-loved books" among literary scholars and the reading
-				public.
+				top of lists of &quot;most-loved books&quot; among literary scholars and
+				the reading public.
 			</p>
 			<p>
 				It has become one of the most popular novels in English literature, with
