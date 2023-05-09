@@ -2,7 +2,7 @@
 	--background: #f9fafc;
 	--background-alt: #f3f4f6;
 	--text: #203146;
-	--text-bright: #0b090d;
+	--text-accent: #0b090d;
 	--accent: #d44be3;
 	--accent-alt: #e7a1ef;
 	--color-accent: #3880ff;
@@ -45,6 +45,19 @@ body {
 	padding: 1.8rem 2rem;
 	color: var(--text);
 	background-color: var(--background);
+	background: linear-gradient(90deg, var(--background-alt) 25%, var(--background) 0);
+	position: relative;
+}
+
+@media screen and (max-width: 450px) {
+	body {
+		background: linear-gradient(
+			90deg,
+			var(--background-alt) 45%,
+			var(--background) 0
+		);
+		padding: 1.3rem 1.3rem;
+	}
 }
 
 .center {
