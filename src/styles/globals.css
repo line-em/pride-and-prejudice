@@ -118,7 +118,8 @@ hr {
 }
 
 button,
-nav a:not(.no-button) {
+nav a:not(.no-button),
+.btn {
 	border-radius: 4px;
 	font-family: inherit;
 	border: var(--accent) solid 2px;
@@ -131,7 +132,8 @@ nav a:not(.no-button) {
 }
 
 button:not(:disabled):hover,
-nav a:hover {
+nav a:hover,
+.btn:hover {
 	cursor: pointer;
 	background-color: var(--accent-alt);
 	transition: ease-in 200ms;

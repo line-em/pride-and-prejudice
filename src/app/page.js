@@ -6,6 +6,9 @@ import { RiArrowRightLine } from "react-icons/ri";
 export default function Home() {
 	return (
 		<main className="center">
+			<nav>
+				<Menu />
+			</nav>
 			<Image
 				src="/image.jpg"
 				width={500}
@@ -58,9 +61,6 @@ export default function Home() {
 				<Link href={`chapters/1`}>
 					Begin Reading <RiArrowRightLine size={18} />
 				</Link>
-			</nav>
-			<nav>
-				<Menu />
 			</nav>
 		</main>
 	);

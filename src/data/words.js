@@ -169,41 +169,41 @@ export default [
 		__v: 0
 	},
 	{
-		_id: "",
-		word: "like Vingt-un better than Commerce",
-		definition:
-			"This quote contains allusions to two card games that were popular during the novel’s setting.",
-		__v: 0
-	},
-	{
-		_id: "",
+		_id: "6erwew45552b6853f139d4652c9ee",
 		word: "witticism",
 		definition: "a cleverly witty and often biting or ironic remark.",
 		__v: 0
 	},
 	{
-		_id: "",
+		_id: "645552b6853f139d4652csaddas9ee",
 		word: "jest",
 		definition: "a joking or mocking remark.",
 		__v: 0
 	},
 	{
-		_id: "",
+		_id: "6dad45552b6853f139d4652c9ee",
 		word: "sycophant",
 		definition:
 			"a person who praises important or powerful people too much and in a way that is not sincere, especially in order to get something from them.",
 		__v: 0
 	},
 	{
-		_id: "",
+		_id: "645552b6853f139d46daerfef52c9ee",
 		word: "coquetry",
 		definition: "a flirtatious act or attitude.",
 		__v: 0
 	},
 	{
-		_id: "",
+		_id: "645adaddf552b6853f139d4652c9ee",
 		word: "ascetic",
 		definition: "austere in appearance, manner, or attitude.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552b6853f139d4652c9ee",
+		word: "superciliousness",
+		definition:
+			"the quality of thinking that you are better than other people, and that their opinions, beliefs, or ideas are not important.",
 		__v: 0
 	}
 ];
