@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pride and Prejudice - Novel App
 
-## Getting Started
+![Thumbnail of the dark theme](<./public/tb%20(2).png>)
+This is an application focusing on **reading and learning**, aiming to make the reading of classics such as **Pride and Prejudice** a more comfortable experience, with:
 
-First, run the development server:
+-   Various customization options, colors, alignment, size and font-family.
+-   Easy access to analysis such as LitCharts and SparkNotes.
+-   Online and responsive reading, making it easy to read on-the-go.
+-   highlighting difficult words (toggle is currently a WIP).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The idea is to make a similar experience to epub/ebook reading, but online and with some extra features. **Hope you like it, and feel free to give me any feedback!**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Current Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   Next.JS 13
+-   CMS - Contentful
+-   Zustand
+-   PostCSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Libraries
 
-## Learn More
+-   Prime-React (accessible tooltips and sidebar)
+-   React-Icons
 
-To learn more about Next.js, take a look at the following resources:
+![Thumbnail of the style options](<./public/tb%20(3).png>)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Future
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+There are some aspects I wish to improve, such as:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Adding auth, for chapter tracking and bookmarking
+-   Finding an easy way to implement more chapters, and eventually, books.
+    -   Currently the content is hosted through a CMS, and a previous version used Mongoose / MongoDB, though I faced difficulties in its integration with Next 13.
+    -   I will probably need to find a way to better incorporate Project Gutenberg assets.
+-   Adding a toggle for words, enabling suggestions for new words for improvement, and further on, disabling specific word highlight - like a personal dictionary.
