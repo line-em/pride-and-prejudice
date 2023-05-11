@@ -16,7 +16,11 @@ function Header() {
 				</Link>
 				<h4 className="mobile-hide">Online reading + Vocabulary builder</h4>
 			</section>
-			<Link href="/" className="no-button flex" target="_blank">
+			<Link
+				href="https://github.com/line-em"
+				className="no-button flex"
+				target="_blank"
+			>
 				<FaGithubAlt size={24} title={"Code Repository on Github"} /> Line-em
 			</Link>
 		</nav>
