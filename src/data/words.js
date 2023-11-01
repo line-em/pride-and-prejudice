@@ -205,5 +205,73 @@ export default [
 		definition:
 			"the quality of thinking that you are better than other people, and that their opinions, beliefs, or ideas are not important.",
 		__v: 0
+	},
+	{
+		_id: "645adaddf552b6853f139d46ff52c9ee",
+		word: "bewail",
+		definition: "express great regret, sadness, or disappointment about (something).",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552b6853f139d46ff52c9ee",
+		word: "bewailed",
+		definition: "express great regret, sadness, or disappointment about (something).",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "whilst",
+		definition: "during the time that something is happening.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "wholly",
+		definition: "totally.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "quarrel",
+		definition: "to have an angry argument or disagreement.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "quarreling",
+		definition: "to have an angry argument or disagreement.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "effusion",
+		definition: "the expression of feelings in an exaggerated way.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "phaeton",
+		definition: "a light, open four-wheeled horse-drawn carriage.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "gaiety",
+		definition: "the state or quality of being light-hearted or cheerful.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "condescension",
+		definition:
+			"behaviour that shows that you think you are more important and more intelligent than other people.",
+		__v: 0
+	},
+	{
+		_id: "645adaddf552ddb6853f139d46ff52c9ee",
+		word: "parlour",
+		definition:
+			"a room in a private house for sitting in, entertaining visitors, etc.",
+		__v: 0
 	}
 ];

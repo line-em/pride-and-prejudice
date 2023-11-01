@@ -36,7 +36,7 @@ function Menu() {
 				<p>More chapters will be added in the future.</p>
 				<section role="listbox" className="flex">
 					{numOfChapters.map((chapter, index) =>
-						index < 12 ? (
+						index < 35 ? (
 							<Link
 								href={`chapters/${chapter}`}
 								key={index}
