@@ -3,6 +3,7 @@ import "../styles/typography.css";
 import "../styles/grid.css";
 import "../styles/globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const lora = Lora({
 	subsets: ["latin"],
@@ -34,7 +35,7 @@ export const literata = Literata({
 	fallback: ["georgia", "times new roman", "serif"]
 });
 
-const metadata = {
+export const metadata = {
 	title: "Pride and Prejudice Novel",
 	description: "Ebook Study Project"
 };
@@ -50,27 +51,7 @@ export default function RootLayout({ children }) {
 				<main>
 					<section className="story">{children}</section>
 				</main>
-				<footer className="center">
-					<hr />
-					Book by Jane Austen. Coding by Line. Special thanks to
-					<Link
-						href="https://standardebooks.org/"
-						className="no-button flex"
-						style={{ fontSize: ".8rem" }}
-						target="_blank"
-					>
-						Standardebooks
-					</Link>{" "}
-					and{" "}
-					<Link
-						href="https://gutenberg.org/"
-						className="no-button flex"
-						style={{ fontSize: ".8rem" }}
-						target="_blank"
-					>
-						Project Gutenberg.
-					</Link>
-				</footer>
+				<Footer />
 			</body>
 		</html>
 	);
