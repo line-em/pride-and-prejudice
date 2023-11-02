@@ -116,7 +116,7 @@ async function page({ params }) {
 				</Link>
 			</nav>
 		</section>
-	);grid-template-columns: repeat(auto-fill,minmax(4ch,1fr));
+	);
 }
 
 export default page;
