@@ -1,4 +1,4 @@
-import { Lora, Rubik, Literata, Alice, Montserrat } from "next/font/google";
+import { Lora, Rubik, Literata, Noto_Sans_Mono, Montserrat } from "next/font/google";
 import "../styles/typography.css";
 import "../styles/grid.css";
 import "../styles/globals.css";
@@ -11,12 +11,11 @@ export const lora = Lora({
 	fallback: ["georgia", "times new roman", "serif"]
 });
 
-export const mono = Alice({
+export const mono = Noto_Sans_Mono({
 	subsets: ["latin"],
 	variable: "--mono",
 	fallback: ["georgia", "times new roman", "serif"]
 });
-// Changed this one, the mono font wasnt working well for readability.
 
 export const rubik = Rubik({
 	subsets: ["latin"],
