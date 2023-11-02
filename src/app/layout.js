@@ -35,11 +35,6 @@ export const literata = Literata({
 	fallback: ["georgia", "times new roman", "serif"]
 });
 
-export const metadata = {
-	title: "Pride and Prejudice Novel",
-	description: "Ebook Study Project"
-};
-
 export default function RootLayout({ children }) {
 	return (
 		<html

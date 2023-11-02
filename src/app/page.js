@@ -3,6 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { RiArrowRightLine } from "react-icons/ri";
 
+export const metadata = {
+	title: "Pride and Prejudice Novel",
+	description: "Ebook Study Project"
+};
+
 export default function Home() {
 	return (
 		<main className="center">

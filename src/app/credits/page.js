@@ -82,6 +82,11 @@ const credits = () => {
 					</Link>
 				</li>
 				<li>
+					<Link href="https://standardebooks.org/" target="_blank">
+						Standard EBook
+					</Link>
+				</li>
+				<li>
 					<Link
 						href="https://www.livros-digitais.com/jane-austen/orgulho-e-preconceito"
 						target="_blank"
