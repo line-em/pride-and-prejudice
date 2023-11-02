@@ -30,11 +30,12 @@ function Menu() {
 				visible={visibleR}
 				onHide={() => setVisibleRight(false)}
 				position="right"
+				className="p-10"
 			>
 				<h3>Chapters</h3>
 				<hr />
 				<p>More chapters will be added in the future.</p>
-				<section role="listbox" className="flex config flex column">
+				<section role="listbox" className="flex config flex">
 					{numOfChapters.map((chapter, index) => (
 						<Link href={`chapters/${chapter}`} key={index} className="btn">
 							{chapter}

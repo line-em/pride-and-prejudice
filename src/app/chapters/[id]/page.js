@@ -54,6 +54,7 @@ async function page({ params }) {
 			<header className="container">
 				<div className="flex space">
 					<h1>Chapter {chapter.chapter}</h1>
+					{params.id}
 					<Menu />
 				</div>
 			</header>
@@ -103,7 +104,7 @@ async function page({ params }) {
 					LitCharts Analysis
 				</Link>
 
-				{params.id - 1 === 61 ? null : (
+				{params.id === 61 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						Next Chapter <RiArrowRightLine size={18} />
 					</Link>

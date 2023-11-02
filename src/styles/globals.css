@@ -161,3 +161,7 @@ button:disabled {
 		display: none;
 	}
 }
+
+.p-10 {
+	padding-inline: 10px;
+}
