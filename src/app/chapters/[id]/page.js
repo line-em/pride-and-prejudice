@@ -110,6 +110,7 @@ async function page({ params }) {
 							? `chapters/${Number(params.id) + Number(1)}`
 							: `credits`
 					}
+					className={params.id == 61 && "hide"}
 				>
 					Next Chapter <RiArrowRightLine size={18} />
 				</Link>
