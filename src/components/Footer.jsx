@@ -8,7 +8,7 @@ export const Footer = () => {
 			<Link
 				href="https://standardebooks.org/"
 				className="no-button flex"
-				style={{ fontSize: ".8rem" }}
+				style={{ fontSize: ".8rem", display: "inline-block" }}
 				target="_blank"
 			>
 				Standardebooks
@@ -17,7 +17,7 @@ export const Footer = () => {
 			<Link
 				href="https://gutenberg.org/"
 				className="no-button flex"
-				style={{ fontSize: ".8rem" }}
+				style={{ fontSize: ".8rem", display: "inline-block" }}
 				target="_blank"
 			>
 				Project Gutenberg.

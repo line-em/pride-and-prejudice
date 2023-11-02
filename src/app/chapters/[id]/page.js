@@ -10,6 +10,11 @@ import Definition from "@/components/Definition";
 import Menu from "@/components/Menu";
 import Link from "next/link";
 
+export const metadata = {
+	title: "Pride and Prejudice Novel",
+	description: "Ebook Study Project"
+};
+
 async function page({ params }) {
 	const chapter = await getChapter(params.id);
 	let currText = chapter?.text.map((item) => item.content[0].value);
@@ -30,7 +35,7 @@ async function page({ params }) {
 		"{",
 		"}"
 	];
-
+	console.log(params.id);
 	return (
 		<section className="story">
 			<div aria-hidden className="float-nav left mobile-hide">
