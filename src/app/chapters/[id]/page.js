@@ -104,12 +104,15 @@ async function page({ params }) {
 					LitCharts Analysis
 				</Link>
 
-				<Link
-					href={`chapters/${Number(params.id) + Number(1)}`}
-					className={params.id == 61 && "hide"}
-				>
-					Next Chapter <RiArrowRightLine size={18} />
-				</Link>
+				{params.id === 61 ? (
+					<Link href={`credits`}>
+						Credits
+					</Link>
+				) : (
+					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
+						Next Chapter <RiArrowRightLine size={18} />
+					</Link>
+				)}
 			</nav>
 		</section>
 	);
@@ -128,54 +131,3 @@ export async function getChapter(id) {
 		text: currChapter.texto.content
 	};
 }
-
-// "use client";
-// function page({ params }) {
-// const chapter = await getChapter();
-// return (
-// 	<article>
-{
-	/* <header>
-				<h1 id="chapter">Chapter {chapter?.id}</h1>
-			</header>
-			<ReactMarkdown>{chapter?.text}</ReactMarkdown> */
-}
-// </article>
-// );
-// }
-
-// export async function getChapter() {
-// 	const res = await fetchEntries();
-// const posts = res.map((p) => {
-// 	return p.fields;
-// });
-// console.log(posts);
-// 	return {
-// 		chapter: 1,
-// 		text: "oi"
-// 	};
-// }
-
-// export async function getChapter(id, req, res) {
-// 	try {
-// 		console.log("CONNECTING");
-// 		await connectMongo();
-// console.log("CONNECTED");
-
-// const chapter = await Chapter.findOne({ id: id });
-// const parsed = JSON.parse(JSON.stringify(chapter));
-
-// const req = await fetch("/api/chapters");
-// const res = await req.json();
-
-// const filter = res.filter((chapter) => chapter.id === id);
-
-// 		return {
-// 			id: parsed.id,
-// 			text: parsed.text
-// 		};
-// 	} catch (error) {
-// 		console.log(error);
-// 	}
-// }
-// export default page;
