@@ -134,6 +134,7 @@ nav a:not(.no-button),
 	display: inline-flex;
 	align-items: center;
 	gap: 7px;
+	text-align: center;
 }
 
 button:not(:disabled):hover,
