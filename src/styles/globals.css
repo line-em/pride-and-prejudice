@@ -165,3 +165,7 @@ button:disabled {
 .p-10 {
 	padding-inline: 10px;
 }
+
+.hide {
+	display: none;
+}

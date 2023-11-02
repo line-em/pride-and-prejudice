@@ -45,11 +45,12 @@ async function page({ params }) {
 				)}
 			</div>
 			<div aria-hidden className="float-nav right mobile-hide">
-				{params.id !== 61 && (
-					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
-						<RiArrowRightSLine size={45} />
-					</Link>
-				)}
+				<Link
+					href={`chapters/${Number(params.id) + Number(1)}`}
+					className={params.id == 61 && "hide"}
+				>
+					<RiArrowRightSLine size={45} />
+				</Link>
 			</div>
 			<header className="container">
 				<div className="flex space">
