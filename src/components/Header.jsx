@@ -22,7 +22,7 @@ function Header() {
 				style={{ fontSize: ".8rem" }}
 				target="_blank"
 			>
-				<FaGithubAlt size={20} title={"Code Repository on Github"} /> Line-em
+				<FaGithubAlt size={20} title={"Code Repository on Github"} />
 			</Link>
 		</nav>
 	);
