@@ -3,6 +3,7 @@ import words from "@/data/words";
 import {
 	RiArrowRightLine,
 	RiArrowLeftLine,
+	RiArrowGoBackFill,
 	RiArrowRightSLine,
 	RiArrowLeftSLine
 } from "react-icons/ri";
@@ -45,7 +46,11 @@ async function page({ params }) {
 				)}
 			</div>
 			<div aria-hidden className="float-nav right mobile-hide">
-				{params.id - 1 === 61 ? null : (
+				{params.id === 61 ? (
+					<Link href={`chapters/1`}>
+						<RiArrowGoBackFill size={45} />
+					</Link>
+				) : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						<RiArrowRightSLine size={45} />
 					</Link>
@@ -54,7 +59,6 @@ async function page({ params }) {
 			<header className="container">
 				<div className="flex space">
 					<h1>Chapter {chapter.chapter}</h1>
-					{params.id}
 					<Menu />
 				</div>
 			</header>
