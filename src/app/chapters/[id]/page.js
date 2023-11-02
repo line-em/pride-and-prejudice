@@ -35,7 +35,6 @@ async function page({ params }) {
 		"{",
 		"}"
 	];
-	console.log(params.id);
 	return (
 		<section className="story">
 			<div aria-hidden className="float-nav left mobile-hide">
@@ -46,7 +45,7 @@ async function page({ params }) {
 				)}
 			</div>
 			<div aria-hidden className="float-nav right mobile-hide">
-				{params.id === 61 ? null : (
+				{params.id - 1 === 61 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						<RiArrowRightSLine size={45} />
 					</Link>
@@ -104,7 +103,7 @@ async function page({ params }) {
 					LitCharts Analysis
 				</Link>
 
-				{params.id === 61 ? null : (
+				{params.id - 1 === 61 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						Next Chapter <RiArrowRightLine size={18} />
 					</Link>

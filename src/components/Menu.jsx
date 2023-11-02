@@ -34,7 +34,7 @@ function Menu() {
 				<h3>Chapters</h3>
 				<hr />
 				<p>More chapters will be added in the future.</p>
-				<section role="listbox" className="flex">
+				<section role="listbox" className="flex config flex column">
 					{numOfChapters.map((chapter, index) => (
 						<Link href={`chapters/${chapter}`} key={index} className="btn">
 							{chapter}
