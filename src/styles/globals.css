@@ -133,6 +133,7 @@ nav a:not(.no-button),
 	color: var(--text-accent);
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	gap: 7px;
 	text-align: center;
 }
@@ -155,6 +156,17 @@ button:is([data-font]) {
 button:disabled {
 	border: var(--text);
 	color: var(--text);
+}
+
+.no-button:hover {
+	color: var(--accent);
+	background-color: transparent;
+}
+
+footer {
+	border-block-start: var(--accent) 2px solid;
+	padding-block: 1rem;
+	max-width: fit-content;
 }
 
 @media screen and (max-width: 460px) {

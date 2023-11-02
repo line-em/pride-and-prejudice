@@ -63,6 +63,7 @@ export default function Home() {
 				<li>Easy to read, responsive interface.</li>
 				<li>
 					Easily check the LitCharts for a given chapter, for further insight.
+					(Info button)
 				</li>
 			</ul>
 			<hr />

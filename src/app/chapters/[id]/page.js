@@ -4,6 +4,7 @@ import {
 	RiArrowRightLine,
 	RiArrowLeftLine,
 	RiArrowRightSLine,
+	RiInformationLine,
 	RiArrowLeftSLine
 } from "react-icons/ri";
 import Definition from "@/components/Definition";
@@ -100,8 +101,10 @@ async function page({ params }) {
 						params.id
 					)}`}
 					target="_blank"
+					alt="LitCharts Analysis"
 				>
-					LitCharts Analysis
+					<RiInformationLine size={20} />
+					Info
 				</Link>
 
 				<Link
