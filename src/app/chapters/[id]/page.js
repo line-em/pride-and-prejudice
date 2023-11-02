@@ -41,7 +41,7 @@ async function page({ params }) {
 				)}
 			</div>
 			<div aria-hidden className="float-nav right mobile-hide">
-				{params.id + 1 === 62 ? null : (
+				{params.id === 61 ? null : (
 					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
 						<RiArrowRightSLine size={45} />
 					</Link>
