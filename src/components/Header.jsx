@@ -19,9 +19,10 @@ function Header() {
 			<Link
 				href="https://github.com/line-em"
 				className="no-button flex"
+				style={{ fontSize: ".8rem" }}
 				target="_blank"
 			>
-				<FaGithubAlt size={24} title={"Code Repository on Github"} /> Line-em
+				<FaGithubAlt size={20} title={"Code Repository on Github"} /> Line-em
 			</Link>
 		</nav>
 	);
