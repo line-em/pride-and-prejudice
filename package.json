@@ -9,17 +9,17 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"autoprefixer": "^10.4.14",
+		"autoprefixer": "^10.4.16",
 		"contentful": "^10.1.6",
-		"dotenv": "^16.0.3",
+		"dotenv": "^16.3.1",
 		"eslint-config-next": "13.4.1",
 		"next": "13.4.1",
 		"postcss": "^8.4.31",
-		"primereact": "^9.3.1",
+		"primereact": "^10.0.9",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-icons": "^4.8.0",
-		"zustand": "^4.3.8"
+		"react-icons": "^4.11.0",
+		"zustand": "^4.4.5"
 	},
 	"devDependencies": {
 		"mongoose": "^7.5.0",
