@@ -23,6 +23,12 @@
 	left: -2.9rem;
 }
 
+.auto-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
+	gap: 20px;
+}
+
 .flex {
 	display: flex;
 	gap: 10px;

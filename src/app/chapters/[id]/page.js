@@ -104,15 +104,15 @@ async function page({ params }) {
 					LitCharts Analysis
 				</Link>
 
-				{params.id === 61 ? (
-					<Link href={`credits`}>
-						Credits
-					</Link>
-				) : (
-					<Link href={`chapters/${Number(params.id) + Number(1)}`}>
-						Next Chapter <RiArrowRightLine size={18} />
-					</Link>
-				)}
+				<Link
+					href={
+						params.id !== 61
+							? `chapters/${Number(params.id) + Number(1)}`
+							: `credits`
+					}
+				>
+					Next Chapter <RiArrowRightLine size={18} />
+				</Link>
 			</nav>
 		</section>
 	);
